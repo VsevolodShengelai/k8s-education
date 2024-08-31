@@ -3,11 +3,11 @@ kind: ReplicaSet
 metadata:
   name: my-replicaset
 spec:
-  replicas: 2
+  replicas: 2       #Количество контейнеров
   selector:
     matchLabels:
-      app: my-app #Селектор для поиска "своих" подов
-  template: #Шаблон pod-а
+      app: my-app   #Селектор для поиска "своих" подов
+  template:         #Шаблон pod-а
     metadata:
       labels:
         app: my-app
